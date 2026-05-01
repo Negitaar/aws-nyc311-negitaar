@@ -38,3 +38,21 @@ Can we predict whether a 311 complaint will be resolved within 3 days?
 - Encode categorical variables
 - Train model
 - Evaluate results
+
+## Baseline Model Results
+
+- **Model:** Logistic Regression
+- **Features used:** agency, borough, problem, incident_zip, day_of_week, hour_of_day, problem_category
+- **Target:** resolved_quickly
+- **Train/test split:** 80/20, random_state=42, stratified
+
+### Metrics
+- Accuracy: ___
+- Precision: ___
+- Recall: ___
+
+### Interpretation
+The baseline logistic regression model achieved an accuracy of ___, precision of ___, and recall of ___. This gives an initial estimate of whether a complaint may be resolved quickly, but the model should be improved and validated further before being used for decisions.
+
+### Limitation
+Some feature values were missing, so imputation was required before training. The model also uses limited categorical features and does not account for operational factors such as staffing levels or agency workload.
